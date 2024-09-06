@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>косметика</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header__container">
+            <div class="logo">
+                <img onclick="slideMoon()" src="img/icons8.png" alt="logo" class="icons8">
+                <div class="theme">
+                    <img onclick="toggleTheme()" src="img/icons8-луна-96.png" alt="" id="theme-btn">
+                </div>
+            </div>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__item"><a class="header__link" href="">каталог</a></li>
+                    <li class="header__item"><a class="header__link" href="">о продовце</a></li>
+                    <li class="header__item"><a class="header__link" href="">скидки</a></li>
+                    <li class="header__item"><a class="header__link" href="">отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="product">
+            <div class="container container__product">
+                <div class="itc-slider" data-slider="itc-slider">
+                    <div class="itc-slider-wrapper">
+                        <div class="itc-slider-items">
+                            <div class="itc-slider-item">
+                                <img class="product__img" src="img/img.webp" alt="">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img class="product__img" src="img/perfume.jpg" alt="">
+                            </div>
+                            <div class="itc-slider-item">
+                                <img class="product__img" src="img/scale_1200.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                    <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                    <button class="itc-slider-btn itc-slider-btn-next"></button>
+                </div>
+                <div class="product__info">
+                    <h1 class="product__title">ORMONDE JAYNE montabaco intensivo</h1>
+                    <p>"Montabaco" - это ароматная сущность Латинской Америки: бесконечная череда кожи, замши, тропической
+                        древесины и листьев табака. Звучание с истинно латинским темпераментом! Страстное танго магнолий и
+                        роз в табачном дыму.</p>
+                        <div class="product__order-block">
+                            <p class="cost">17600 &#8381;</p>
+                            <button class="product__btn" id="buy" onclick="addToCart()">купить</button>
+                            <div class="basket">
+                                <img src="img/icons8-корзина-2-100.png" alt="" class="product__basket">
+                                <span class="goods">0</span>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+            <script src="js/script.js">
+
+    </script>
+    <script src="js/itc-slider.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/basket.js"></script>
+</body>
+
+</html>
